@@ -1,7 +1,7 @@
 $("document").ready(function(){
     var number = 0;
     function addItem(name){
-        if (!/\S/.test($("#new").val())){
+        if (/^\s*$/.test($("#new").val()) == false){
             $("#todoItems").append('<li class="items"><input type="checkbox">'+name+'<button type="button" class="delete">Delete</button></li>');
         }};
 
