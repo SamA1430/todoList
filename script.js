@@ -17,7 +17,7 @@ $("document").ready(function(){
 
     $("body").on("click",".check",function(){
         if ($(this).is(":checked")){
-            $(this).parent().css("background-color","green")
+            $(this).parent().css("background-color","grey")
         }
         else{
             $(this).parent().css("background-color","white")
